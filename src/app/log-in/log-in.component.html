@@ -1,0 +1,20 @@
+<div class="card"style="max-width: 50%;;margin-left: 25%;margin-top: 7%;background-color: grey;">
+    <div class="card-body">
+      <h5>Login :</h5>
+      <form [formGroup]="loginForm">
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text"  class="form-control" id="staticEmail" value="email@example.com"formControlName="loginEmail">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword"formControlName="loginPassword">
+            </div>
+            </div>
+            <button type="button" class="btn btn-success"(click)='login()'>Login</button>
+      </form>
+    </div>
+  </div>
